@@ -1,0 +1,9 @@
+observation_id,host_id,hostname,priority,reason,evidence,source,run_id,timestamp
+interesting_001,host_001,www.zooplus.de,medium,staging_indicator,Cookie sid with long Max-Age=34560000 suggests persistent session tracking; SENTRY_DSN exposed in inline JS,httpx,20260905-071144,2026-09-05T07:12:05.632529+00:00
+interesting_002,host_001,www.zooplus.de,medium,unusual_technology,Istio Envoy as web server (service mesh sidecar) - unusual for public-facing e-commerce,httpx,20260905-071144,2026-09-05T07:12:05.632543+00:00
+interesting_003,host_001,www.zooplus.de,low,different_infrastructure,AWS CloudFront + Lambda (x-lambda-region: eu-central-1) - serverless architecture,httpx,20260905-071144,2026-09-05T07:12:05.632546+00:00
+interesting_004,host_002,www.zooplus.com,medium,staging_indicator,Same architecture as .de but different AWS region/IPs - may be separate deployment,httpx,20260905-071144,2026-09-05T07:12:05.632547+00:00
+interesting_005,host_002,www.zooplus.com,low,authentication_surface,Set-Cookie: sid with HttpOnly; SameSite=Lax - session management visible,httpx,20260905-071144,2026-09-05T07:12:05.632549+00:00
+interesting_006,host_001,www.zooplus.de,high,api_exposure,Inline script exposes REACT_APP_* API URLs including BFF endpoints and internal API paths,httpx,20260905-071144,2026-09-05T07:12:05.632550+00:00
+interesting_007,host_001,www.zooplus.de,medium,unusual_hosting,CNAME to shopwallp.ext.aws.zooplus.io - third-party shopwall platform on AWS,httpx,20260905-071144,2026-09-05T07:12:05.632552+00:00
+interesting_008,host_001,www.zooplus.de,low,redirect,No redirect observed - direct 200 response from both www.zooplus.de and www.zooplus.com,httpx,20260905-071144,2026-09-05T07:12:05.632553+00:00

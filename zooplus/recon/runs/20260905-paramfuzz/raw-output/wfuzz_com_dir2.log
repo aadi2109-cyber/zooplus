@@ -1,0 +1,5 @@
+ /usr/lib/python3/dist-packages/wfuzz/__init__.py:34: UserWarning:Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.
+default
+default
+ /usr/lib/python3/dist-packages/wfuzz/plugin_api/base.py:60: SyntaxWarning:'return' in a 'finally' block
+ /usr/lib/python3/dist-packages/wfuzz/wfuzz.py:78: UserWarning:Fatal exception: FUZZ words and number of payloads do not match!

@@ -1,0 +1,162 @@
+{
+  "plan_id": "param_fuzz_001",
+  "run_id": "20260905-090000",
+  "timestamp": "2026-09-05T13:56:30.275964+00:00",
+  "scope": [
+    "www.zooplus.de",
+    "www.zooplus.com"
+  ],
+  "tools": {
+    "arjun": {
+      "path": "/usr/bin/arjun",
+      "version": "Arjun (python-arjun)",
+      "wordlists": {
+        "small": "/usr/lib/python3/dist-packages/arjun/db/small.txt (835 words)",
+        "medium": "/usr/lib/python3/dist-packages/arjun/db/medium.txt (10984 words)",
+        "large": "/usr/lib/python3/dist-packages/arjun/db/large.txt (25889 words)"
+      },
+      "modes": [
+        "GET",
+        "POST",
+        "JSON",
+        "XML"
+      ],
+      "strategy": "Start with small wordlist on both domains, escalate to medium if needed"
+    },
+    "ffuf": {
+      "path": "/usr/bin/ffuf",
+      "version": "ffuf",
+      "modes": [
+        "FUZZ",
+        "DIRFUZZ",
+        "RECURSIVE"
+      ],
+      "strategy": "Use for directory/endpoint discovery with wordlists"
+    },
+    "wfuzz": {
+      "path": "/usr/bin/wfuzz",
+      "version": "wfuzz",
+      "modes": [
+        "FUZZ",
+        "DIRFUZZ"
+      ],
+      "strategy": "Alternative parameter fuzzing with comprehensive wordlists"
+    }
+  },
+  "targets": [
+    {
+      "host": "www.zooplus.de",
+      "url": "https://www.zooplus.de",
+      "scope": "in_scope"
+    },
+    {
+      "host": "www.zooplus.com",
+      "url": "https://www.zooplus.com",
+      "scope": "in_scope"
+    }
+  ],
+  "phase_1": {
+    "description": "Arjun GET parameter discovery - small wordlist",
+    "tools": [
+      "arjun"
+    ],
+    "wordlist": "small",
+    "targets": [
+      "www.zooplus.de",
+      "www.zooplus.com"
+    ],
+    "methods": [
+      "GET"
+    ],
+    "threads": 3,
+    "delay": 1,
+    "timeout": 15
+  },
+  "phase_2": {
+    "description": "Arjun GET parameter discovery - medium wordlist on high-priority endpoints",
+    "tools": [
+      "arjun"
+    ],
+    "wordlist": "medium",
+    "targets": [
+      "www.zooplus.de",
+      "www.zooplus.com"
+    ],
+    "methods": [
+      "GET"
+    ],
+    "threads": 3,
+    "delay": 1,
+    "timeout": 15
+  },
+  "phase_3": {
+    "description": "Arjun POST parameter discovery",
+    "tools": [
+      "arjun"
+    ],
+    "wordlist": "small",
+    "targets": [
+      "www.zooplus.de",
+      "www.zooplus.com"
+    ],
+    "methods": [
+      "POST"
+    ],
+    "threads": 3,
+    "delay": 1,
+    "timeout": 15
+  },
+  "phase_4": {
+    "description": "Arjun JSON parameter discovery",
+    "tools": [
+      "arjun"
+    ],
+    "wordlist": "small",
+    "targets": [
+      "www.zooplus.de",
+      "www.zooplus.com"
+    ],
+    "methods": [
+      "JSON"
+    ],
+    "threads": 3,
+    "delay": 1,
+    "timeout": 15
+  },
+  "phase_5": {
+    "description": "ffuf directory/endpoint discovery",
+    "tools": [
+      "ffuf"
+    ],
+    "wordlist": "/usr/share/wordlists/dirb/common.txt",
+    "targets": [
+      "www.zooplus.de",
+      "www.zooplus.com"
+    ],
+    "threads": 5,
+    "delay": 1,
+    "timeout": 15
+  },
+  "phase_6": {
+    "description": "wfuzz parameter fuzzing",
+    "tools": [
+      "wfuzz"
+    ],
+    "wordlist": "/usr/share/wordlists/wfuzz/params.txt",
+    "targets": [
+      "www.zooplus.de",
+      "www.zooplus.com"
+    ],
+    "threads": 3,
+    "delay": 1,
+    "timeout": 15
+  },
+  "safety": {
+    "rate_limit": "1 request per second minimum",
+    "max_threads": 5,
+    "timeout": "15 seconds per request",
+    "no_bruteforce": "No credential brute-forcing",
+    "no_exploitation": "No vulnerability exploitation",
+    "scope_enforcement": "Only in-scope targets"
+  }
+}

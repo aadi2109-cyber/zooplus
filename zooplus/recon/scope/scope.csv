@@ -1,0 +1,3 @@
+identifier,asset_type,instruction,eligible_for_bounty,eligible_for_submission,scope_status,scope_notes,source_row
+www.zooplus.de,URL,Also try www.zooplus.com per backend sharing note,True,True,in_scope,Primary target; also test www.zooplus.com per scope instruction,row 2 (www.zooplus.de) + row 34 (www.zooplus.com instruction)
+www.zooplus.com,URL,Also try www.zooplus.com per backend sharing note,True,True,in_scope,Authorized per www.zooplus.de scope instruction,row 34 (www.zooplus.com)

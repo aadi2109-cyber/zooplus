@@ -1,0 +1,38 @@
+[
+  {
+    "command": "dig +short www.zooplus.de",
+    "timestamp": "2026-09-05T07:12:38.754927+00:00",
+    "run_id": "20260905-071144",
+    "output_file": "raw-output/dns_zooplus_de.txt"
+  },
+  {
+    "command": "dig +short www.zooplus.com",
+    "timestamp": "2026-09-05T07:12:38.754947+00:00",
+    "run_id": "20260905-071144",
+    "output_file": "raw-output/dns_zooplus_com.txt"
+  },
+  {
+    "command": "host www.zooplus.de",
+    "timestamp": "2026-09-05T07:12:38.754950+00:00",
+    "run_id": "20260905-071144",
+    "output_file": "raw-output/host_zooplus_de.txt"
+  },
+  {
+    "command": "host www.zooplus.com",
+    "timestamp": "2026-09-05T07:12:38.754952+00:00",
+    "run_id": "20260905-071144",
+    "output_file": "raw-output/host_zooplus_com.txt"
+  },
+  {
+    "command": "httpx --follow-redirects --verbose https://www.zooplus.de",
+    "timestamp": "2026-09-05T07:12:38.754953+00:00",
+    "run_id": "20260905-071144",
+    "output_file": "raw-output/httpx_zooplus_de.txt"
+  },
+  {
+    "command": "httpx --follow-redirects --verbose https://www.zooplus.com",
+    "timestamp": "2026-09-05T07:12:38.754955+00:00",
+    "run_id": "20260905-071144",
+    "output_file": "raw-output/httpx_zooplus_com.txt"
+  }
+]

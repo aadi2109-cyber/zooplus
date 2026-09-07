@@ -1,0 +1,50 @@
+{
+  "scope_count": 2,
+  "hosts_total": 2,
+  "hosts_up": 2,
+  "http_services": 2,
+  "https_services": 2,
+  "technologies_total": 20,
+  "technology_categories": [
+    "javascript",
+    "cms",
+    "framework",
+    "cdn",
+    "reverse_proxy",
+    "web_server",
+    "frontend",
+    "database",
+    "analytics",
+    "infrastructure",
+    "backend"
+  ],
+  "interesting_hosts": 16,
+  "high_priority": 5,
+  "medium_priority": 8,
+  "low_priority": 3,
+  "dns_records": 26,
+  "urls_discovered": 6,
+  "observations": 16,
+  "last_run": "20260905-085356",
+  "tools_used": [
+    "httpx",
+    "dig",
+    "host",
+    "nslookup",
+    "fierce",
+    "dnsrecon"
+  ],
+  "tool_versions": {
+    "httpx": "Python httpx CLI (python-httpx)",
+    "dig": "BIND 9.x (via dnsutils)",
+    "host": "bind9-host",
+    "nslookup": "dnsutils",
+    "fierce": "perilsofqinat/fierce",
+    "dnsrecon": "dnsrecon"
+  },
+  "scope_targets": [
+    "www.zooplus.de",
+    "www.zooplus.com"
+  ],
+  "timestamp": "2026-09-05T12:56:57.989486+00:00"
+}

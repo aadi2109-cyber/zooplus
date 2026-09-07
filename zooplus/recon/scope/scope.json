@@ -1,0 +1,22 @@
+[
+  {
+    "identifier": "www.zooplus.de",
+    "asset_type": "URL",
+    "instruction": "Also try www.zooplus.com per backend sharing note",
+    "eligible_for_bounty": true,
+    "eligible_for_submission": true,
+    "scope_status": "in_scope",
+    "scope_notes": "Primary target; also test www.zooplus.com per scope instruction",
+    "source_row": "row 2 (www.zooplus.de) + row 34 (www.zooplus.com instruction)"
+  },
+  {
+    "identifier": "www.zooplus.com",
+    "asset_type": "URL",
+    "instruction": "Also try www.zooplus.com per backend sharing note",
+    "eligible_for_bounty": true,
+    "eligible_for_submission": true,
+    "scope_status": "in_scope",
+    "scope_notes": "Authorized per www.zooplus.de scope instruction",
+    "source_row": "row 34 (www.zooplus.com)"
+  }
+]

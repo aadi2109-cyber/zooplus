@@ -1,0 +1,32 @@
+[
+  {
+    "command": "dnsrecon -d zooplus.de -t std",
+    "timestamp": "2026-09-05T12:56:57.992405+00:00",
+    "run_id": "20260905-085356",
+    "output_file": "raw-output/dnsrecon_zooplus_de.txt"
+  },
+  {
+    "command": "fierce --domain zooplus.de",
+    "timestamp": "2026-09-05T12:56:57.992424+00:00",
+    "run_id": "20260905-085356",
+    "output_file": "raw-output/fierce_zooplus_de.txt"
+  },
+  {
+    "command": "fierce --domain zooplus.com",
+    "timestamp": "2026-09-05T12:56:57.992429+00:00",
+    "run_id": "20260905-085356",
+    "output_file": "raw-output/fierce_zooplus_com.txt"
+  },
+  {
+    "command": "httpx --follow-redirects --verbose https://www.zooplus.de",
+    "timestamp": "2026-09-05T12:56:57.992433+00:00",
+    "run_id": "20260905-085356",
+    "output_file": "raw-output/httpx_zooplus_de.txt"
+  },
+  {
+    "command": "httpx --follow-redirects --verbose https://www.zooplus.com",
+    "timestamp": "2026-09-05T12:56:57.992437+00:00",
+    "run_id": "20260905-085356",
+    "output_file": "raw-output/httpx_zooplus_com.txt"
+  }
+]

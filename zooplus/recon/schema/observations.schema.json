@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "observation_id",
+    "target_id",
+    "type",
+    "value",
+    "source",
+    "confidence",
+    "run_id"
+  ],
+  "properties": {
+    "observation_id": {
+      "type": "string",
+      "pattern": "^obs_[0-9]+$"
+    },
+    "target_id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "http_header",
+        "cookie",
+        "inline_script",
+        "dns",
+        "technology",
+        "redirect",
+        "interesting",
+        "other"
+      ]
+    },
+    "value": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+technology_id,http_id,host_id,name,version,category,source,evidence,confidence,first_seen,last_seen
+tech_001,http_001,host_001,Next.js,unknown,frontend,httpx,x-powered-by: Next.js header; _next/static chunks in HTML,high,2026-09-05T07:11:57.782678+00:00,2026-09-05T07:11:57.782689+00:00
+tech_002,http_001,host_001,React,unknown,frontend,httpx,React scripts in HTML; Next.js framework,high,2026-09-05T07:11:57.782691+00:00,2026-09-05T07:11:57.782693+00:00
+tech_003,http_001,host_001,Angular,unknown,frontend,httpx,Angular references in system_tags from scope CSV,medium,2026-09-05T07:11:57.782694+00:00,2026-09-05T07:11:57.782695+00:00
+tech_004,http_001,host_001,Node.js,unknown,backend,httpx,x-lambda-region header indicates AWS Lambda (Node.js runtime),medium,2026-09-05T07:11:57.782696+00:00,2026-09-05T07:11:57.782697+00:00
+tech_005,http_001,host_001,Java,unknown,backend,httpx,Java in system_tags; Apache Tomcat referenced,medium,2026-09-05T07:11:57.782698+00:00,2026-09-05T07:11:57.782699+00:00
+tech_006,http_001,host_001,Spring Boot,unknown,framework,httpx,Spring Boot in system_tags,medium,2026-09-05T07:11:57.782700+00:00,2026-09-05T07:11:57.782701+00:00
+tech_007,http_001,host_001,Docker,unknown,infrastructure,httpx,Docker in system_tags,low,2026-09-05T07:11:57.782702+00:00,2026-09-05T07:11:57.782703+00:00
+tech_008,http_001,host_001,Nginx,unknown,web_server,httpx,Nginx in system_tags,low,2026-09-05T07:11:57.782704+00:00,2026-09-05T07:11:57.782705+00:00
+tech_009,http_001,host_001,Elastic Search,unknown,database,httpx,Elastic Search in system_tags,low,2026-09-05T07:11:57.782706+00:00,2026-09-05T07:11:57.782707+00:00
+tech_010,http_001,host_001,PostgreSQL,unknown,database,httpx,PostgreSQL in system_tags,low,2026-09-05T07:11:57.782708+00:00,2026-09-05T07:11:57.782709+00:00
+tech_011,http_001,host_001,Apache Tomcat,unknown,web_server,httpx,Apache Tomcat in system_tags,low,2026-09-05T07:11:57.782710+00:00,2026-09-05T07:11:57.782711+00:00
+tech_012,http_001,host_001,CloudFront,unknown,cdn,httpx,Via: CloudFront header; X-Cache: Hit from cloudfront,high,2026-09-05T07:11:57.782712+00:00,2026-09-05T07:11:57.782713+00:00
+tech_013,http_001,host_001,Istio,unknown,reverse_proxy,httpx,Server: istio-envoy header,high,2026-09-05T07:11:57.782714+00:00,2026-09-05T07:11:57.782714+00:00
+tech_014,http_001,host_001,jQuery,3.6.0,javascript,httpx,code.jquery.com/jquery-3.6.0.min.js preloaded,high,2026-09-05T07:11:57.782715+00:00,2026-09-05T07:11:57.782716+00:00
+tech_015,http_001,host_001,Sentry,unknown,analytics,httpx,SENTRY_DSN in inline script,high,2026-09-05T07:11:57.782717+00:00,2026-09-05T07:11:57.782718+00:00
+tech_016,http_001,host_001,Shopware,unknown,cms,httpx,shopwallp.ext.aws.zooplus.io CNAME indicates Shopwall platform,medium,2026-09-05T07:11:57.782725+00:00,2026-09-05T07:11:57.782726+00:00
+tech_017,http_002,host_002,Next.js,unknown,frontend,httpx,x-powered-by: Next.js header; _next/static chunks in HTML,high,2026-09-05T07:11:57.782727+00:00,2026-09-05T07:11:57.782728+00:00
+tech_018,http_002,host_002,React,unknown,frontend,httpx,React scripts in HTML; Next.js framework,high,2026-09-05T07:11:57.782729+00:00,2026-09-05T07:11:57.782730+00:00
+tech_019,http_002,host_002,CloudFront,unknown,cdn,httpx,Via: CloudFront header; X-Cache: Hit from cloudfront,high,2026-09-05T07:11:57.782731+00:00,2026-09-05T07:11:57.782732+00:00
+tech_020,http_002,host_002,Istio,unknown,reverse_proxy,httpx,Server: istio-envoy header,high,2026-09-05T07:11:57.782733+00:00,2026-09-05T07:11:57.782734+00:00

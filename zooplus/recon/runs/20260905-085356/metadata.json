@@ -1,0 +1,32 @@
+{
+  "run_id": "20260905-085356",
+  "start_time": "2026-09-05T12:56:57.992716+00:00",
+  "end_time": "2026-09-05T12:56:57.992727+00:00",
+  "scope_source": "scopes_for_zooplus_at_2026-09-05_07_08_02_UTC.csv",
+  "tools_used": [
+    "httpx",
+    "dig",
+    "host",
+    "nslookup",
+    "fierce",
+    "dnsrecon"
+  ],
+  "tool_versions": {
+    "httpx": "Python httpx CLI (python-httpx)",
+    "dig": "BIND 9.x (via dnsutils)",
+    "host": "bind9-host",
+    "nslookup": "dnsutils",
+    "fierce": "perilsofqinat/fierce",
+    "dnsrecon": "dnsrecon"
+  },
+  "commands": [
+    "dnsrecon -d zooplus.de -t std",
+    "fierce --domain zooplus.de",
+    "fierce --domain zooplus.com",
+    "httpx --follow-redirects --verbose https://www.zooplus.de",
+    "httpx --follow-redirects --verbose https://www.zooplus.com"
+  ],
+  "target_count": 2,
+  "host_count": 2,
+  "notes": "Authorized reconnaissance only. Scope: www.zooplus.de and www.zooplus.com per scope CSV. Subdomain discovery via fierce and dnsrecon. IDOR risk analysis based on httpx output."
+}

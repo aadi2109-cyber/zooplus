@@ -1,0 +1,31 @@
+{
+  "run_id": "20260905-071144",
+  "start_time": "2026-09-05T07:12:38.754211+00:00",
+  "end_time": "2026-09-05T07:12:38.754240+00:00",
+  "scope_source": "scopes_for_zooplus_at_2026-09-05_07_08_02_UTC.csv",
+  "tools_used": [
+    "httpx",
+    "dig",
+    "host",
+    "nslookup"
+  ],
+  "tool_versions": {
+    "httpx": "Python httpx CLI (python-httpx)",
+    "dig": "BIND 9.x (via dnsutils)",
+    "host": "bind9-host",
+    "nslookup": "dnsutils"
+  },
+  "commands": [
+    "dig +short www.zooplus.de",
+    "dig +short www.zooplus.com",
+    "host www.zooplus.de",
+    "host www.zooplus.com",
+    "nslookup www.zooplus.de",
+    "nslookup www.zooplus.com",
+    "httpx --follow-redirects --verbose https://www.zooplus.de",
+    "httpx --follow-redirects --verbose https://www.zooplus.com"
+  ],
+  "target_count": 2,
+  "host_count": 2,
+  "notes": "Authorized reconnaissance only. Scope: www.zooplus.de and www.zooplus.com per scope CSV."
+}

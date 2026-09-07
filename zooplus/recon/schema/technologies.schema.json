@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "technology_id",
+    "http_id",
+    "host_id",
+    "name",
+    "category",
+    "source",
+    "confidence"
+  ],
+  "properties": {
+    "technology_id": {
+      "type": "string",
+      "pattern": "^tech_[0-9]+$"
+    },
+    "http_id": {
+      "type": "string",
+      "pattern": "^http_[0-9]+$"
+    },
+    "host_id": {
+      "type": "string",
+      "pattern": "^host_[0-9]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "web_server",
+        "reverse_proxy",
+        "cdn",
+        "waf",
+        "frontend",
+        "javascript",
+        "backend",
+        "framework",
+        "cms",
+        "analytics",
+        "ecommerce",
+        "cloud",
+        "authentication",
+        "database",
+        "infrastructure",
+        "other"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "first_seen": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_seen": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

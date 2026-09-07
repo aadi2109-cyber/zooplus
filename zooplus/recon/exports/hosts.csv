@@ -1,0 +1,3 @@
+host_id,hostname,fqdn,domain,scope,scope_source,status,ips,first_seen,last_seen,tags
+host_001,www.zooplus.de,www.zooplus.de,zooplus.de,in_scope,scope.csv row 2,up,"['3.160.196.62', '3.160.196.20', '3.160.196.113', '3.160.196.110']",2026-09-05T07:11:44.719704+00:00,2026-09-05T07:11:44.719707+00:00,"['aws', 'cloudfront', 'istio', 'nextjs']"
+host_002,www.zooplus.com,www.zooplus.com,zooplus.com,in_scope,scope.csv row 34,up,"['18.161.111.117', '18.161.111.88', '18.161.111.7', '18.161.111.66']",2026-09-05T07:11:44.719710+00:00,2026-09-05T07:11:44.719710+00:00,"['aws', 'cloudfront', 'istio', 'nextjs']"

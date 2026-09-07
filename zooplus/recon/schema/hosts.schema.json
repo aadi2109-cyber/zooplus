@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "host_id",
+    "hostname",
+    "fqdn",
+    "domain",
+    "scope",
+    "status",
+    "ips"
+  ],
+  "properties": {
+    "host_id": {
+      "type": "string",
+      "pattern": "^host_[0-9]+$"
+    },
+    "hostname": {
+      "type": "string"
+    },
+    "fqdn": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "in_scope",
+        "out_of_scope",
+        "unknown"
+      ]
+    },
+    "scope_source": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "up",
+        "down",
+        "unknown"
+      ]
+    },
+    "ips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "first_seen": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_seen": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
