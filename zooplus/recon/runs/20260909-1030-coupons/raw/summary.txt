@@ -1,0 +1,6 @@
+Coupon status summary:
+baseline.curl-sv < HTTP/2 401 
+customerId.curl-sv < HTTP/2 401 
+id-placeholder.curl-sv < HTTP/2 401 
+trailing.curl-sv < HTTP/2 401 
+userId.curl-sv < HTTP/2 401 
