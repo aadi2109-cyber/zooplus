@@ -1,0 +1,3 @@
+Downloaded bundle counts:
+.de: 18
+.com: 18

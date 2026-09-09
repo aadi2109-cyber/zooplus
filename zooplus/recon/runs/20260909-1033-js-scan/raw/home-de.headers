@@ -1,0 +1,21 @@
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+date: Wed, 09 Sep 2026 10:32:17 GMT
+server: istio-envoy
+x-powered-by: Next.js
+access-control-allow-origin: *
+link: </_next/static/css/61c311caee17c5e2.css>; rel=preload; as="style", </_next/static/css/9952e9b547a7a39c.css>; rel=preload; as="style", </_next/static/css/f34f29144f8ec3a2.css>; rel=preload; as="style", </_next/static/css/be36b72d7ec7c4f3.css>; rel=preload; as="style", </_next/static/css/c69570c68d9db500.css>; rel=preload; as="style", </_next/static/css/de7836ffb6ccf113.css>; rel=preload; as="style", </_next/static/css/8896b70984245802.css>; rel=preload; as="style", </_next/static/css/235de8ef500363c2.css>; rel=preload; as="style", </_next/static/css/8a1b3114404ecf5f.css>; rel=preload; as="style", </_next/static/css/efb205eb833c4503.css>; rel=preload; as="style", </_next/static/css/26c3d8d81eab634d.css>; rel=preload; as="style", </_next/static/css/3f1ee2c0a6b27843.css>; rel=preload; as="style", </_next/static/css/f00a1dfcd8c17164.css>; rel=preload; as="style", </_next/static/css/a464798ecbada184.css>; rel=preload; as="style", </_next/static/css/ccad26621667717a.css>; rel=preload; as="style", </_next/static/css/53e4e4d9ff15166a.css>; rel=preload; as="style", </_next/static/css/5633ab7d4c345ce1.css>; rel=preload; as="style", </_next/static/css/4bc51a6a1b625ae6.css>; rel=preload; as="style", </_next/static/css/7597e2419125af4b.css>; rel=preload; as="style", </_next/static/css/a036e2764aefc028.css>; rel=preload; as="style", </_next/static/css/f0f88f281f2ac7f7.css>; rel=preload; as="style", </_next/static/css/c30bf32eb598942f.css>; rel=preload; as="style", </_next/static/css/67eaef494b81e76c.css>; rel=preload; as="style"
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+x-envoy-upstream-service-time: 238
+vary: rsc,next-router-prefetch,next-router-segment-prefetch,Accept-Encoding
+via: 1.1 a323fb2596392c6fc1b0f3d822453640.cloudfront.net (CloudFront)
+alt-svc: h3=":443"; ma=86400
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+cross-origin-opener-policy: same-origin-allow-popups
+set-cookie: sid=0d8bc976-d85c-453c-b42f-5e5535e01873; Max-Age=34560000; SameSite=Lax; HttpOnly; Secure; Path=/; Domain=.zooplus.de
+x-lambda-region: eu-central-1
+x-stream-status: Log
+x-cache: Miss from cloudfront
+x-amz-cf-pop: MRS52-P6
+x-amz-cf-id: gqYIwNJ0AgRMgocxVXh3wU-XTrSGHefNP5FXVZt3G1T42dxuZ4uwBQ==
+
