@@ -1,0 +1,8 @@
+4:server: istio-envoy
+5:x-powered-by: Next.js
+9:x-envoy-upstream-service-time: 124
+15:x-lambda-region: eu-central-1
+16:x-stream-status: Log
+17:x-cache: Miss from cloudfront
+18:x-amz-cf-pop: MRS52-P4
+19:x-amz-cf-id: 5H_gk-rgpfT0eSVeGeg00DZaNVTFklTpprW-AZFHAWZFatxcmC0irg==

@@ -1,0 +1,21 @@
+=== headers de ===
+4:server: istio-envoy
+5:x-powered-by: Next.js
+9:x-envoy-upstream-service-time: 238
+16:x-lambda-region: eu-central-1
+17:x-stream-status: Log
+18:x-cache: Miss from cloudfront
+19:x-amz-cf-pop: MRS52-P6
+20:x-amz-cf-id: gqYIwNJ0AgRMgocxVXh3wU-XTrSGHefNP5FXVZt3G1T42dxuZ4uwBQ==
+=== headers com ===
+4:server: istio-envoy
+5:x-powered-by: Next.js
+9:x-envoy-upstream-service-time: 124
+15:x-lambda-region: eu-central-1
+16:x-stream-status: Log
+17:x-cache: Miss from cloudfront
+18:x-amz-cf-pop: MRS52-P4
+19:x-amz-cf-id: 5H_gk-rgpfT0eSVeGeg00DZaNVTFklTpprW-AZFHAWZFatxcmC0irg==
+=== CSP findings ===
+zooplus/recon/runs/20260909-1034-dedotcom/raw/home-de.headers:6:access-control-allow-origin: *
+zooplus/recon/runs/20260909-1034-dedotcom/raw/home-com.headers:6:access-control-allow-origin: *

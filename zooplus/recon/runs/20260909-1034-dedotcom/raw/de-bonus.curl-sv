@@ -1,0 +1,76 @@
+* Host www.zooplus.de:443 was resolved.
+* IPv6: (none)
+* IPv4: 3.160.196.113, 3.160.196.62, 3.160.196.20, 3.160.196.110
+*   Trying 3.160.196.113:443...
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1693 bytes data]
+* SSL Trust: peer verification disabled
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [3807 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519MLKEM768 / RSASSA-PSS
+* ALPN: server accepted h2
+* Server certificate:
+*   subject: CN=zooplus.de
+*   start date: Aug 20 00:00:00 2026 GMT
+*   expire date: Mar  5 23:59:59 2027 GMT
+*   issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M04
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+* OpenSSL verify result: 14
+*  SSL certificate verification failed, continuing anyway!
+* Established connection to www.zooplus.de (3.160.196.113 port 443) from 192.168.192.128 port 43172 
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://www.zooplus.de/loy/api/bonus-points/v1/customers/balance
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: www.zooplus.de]
+* [HTTP/2] [1] [:path: /loy/api/bonus-points/v1/customers/balance]
+* [HTTP/2] [1] [user-agent: curl/8.21.0]
+* [HTTP/2] [1] [accept: */*]
+} [5 bytes data]
+> GET /loy/api/bonus-points/v1/customers/balance HTTP/2
+> Host: www.zooplus.de
+> User-Agent: curl/8.21.0
+> Accept: */*
+> 
+* Request completely sent off
+} [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [157 bytes data]
+< HTTP/2 204 
+< date: Wed, 09 Sep 2026 12:57:16 GMT
+< server: istio-envoy
+< vary: User-Agent,Origin
+< x-trace-id: 8727f4b0-f5e6-4887-bc57-fb2aa0f83502
+< x-envoy-upstream-service-time: 24
+< via: 1.1 0621d5d0bf703b09afd9f36740fdab3a.cloudfront.net (CloudFront)
+< alt-svc: h3=":443"; ma=86400
+< strict-transport-security: max-age=31536000; includeSubDomains; preload
+< cross-origin-opener-policy: same-origin-allow-popups
+< set-cookie: sid=feb52d86-2edb-4a1e-98a2-3e1beb2c7657; Max-Age=34560000; SameSite=Lax; HttpOnly; Secure; Path=/; Domain=.zooplus.de
+< x-lambda-region: eu-central-1
+< x-stream-status: Log
+< x-cache: Miss from cloudfront
+< x-amz-cf-pop: MRS52-P6
+< x-amz-cf-id: Jj11R5-CQNECYsxI5dKMVPVK8wzRhgKmgY2zjghBwE8J7wOvm0Q8Lg==
+< 
+{ [0 bytes data]
+* Connection #0 to host www.zooplus.de:443 left intact
