@@ -1,0 +1,13 @@
+Semiprotected status summary:
+audiences-auth.curl-sv < HTTP/2 404 
+audiences-get.curl-sv < HTTP/2 404 
+audiences-options.curl-sv < HTTP/2 404 
+audiences-trailing.curl-sv < HTTP/2 404 
+content-auth.curl-sv < HTTP/2 404 
+content-get.curl-sv < HTTP/2 404 
+content-options.curl-sv < HTTP/2 204 
+content-trailing.curl-sv < HTTP/2 404 
+zoochat-auth.curl-sv < HTTP/2 404 
+zoochat-get.curl-sv < HTTP/2 404 
+zoochat-options.curl-sv < HTTP/2 404 
+zoochat-trailing.curl-sv < HTTP/2 404 
